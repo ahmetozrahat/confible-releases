@@ -10,7 +10,7 @@ version, and the smallest thing that demonstrates it. If you would rather not
 put a proof of concept in an email, say so and we will agree on somewhere else
 to put it.
 
-You will get a reply within three working days. If the report is valid you will
+You will get a reply within two working days — the same promise confible.dev/contact makes, because two pages promising different numbers is one page lying. If the report is valid you will
 be told what the fix is and when it ships, and you will be credited in the
 release notes unless you ask not to be.
 
