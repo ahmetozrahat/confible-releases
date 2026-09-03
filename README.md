@@ -74,11 +74,23 @@ against a hand-written list:
 
 - 🔵 [**Planned**](https://github.com/ahmetozrahat/confible-releases/issues?q=is%3Aissue+is%3Aopen+label%3A%22status%3A+planned%22) — decided and queued
 - 🟣 [**In progress**](https://github.com/ahmetozrahat/confible-releases/issues?q=is%3Aissue+is%3Aopen+label%3A%22status%3A+in+progress%22) — being worked on now
+- 🟠 [**Considering**](https://github.com/ahmetozrahat/confible-releases/issues?q=is%3Aissue+is%3Aopen+label%3A%22status%3A+considering%22) — wanted, **not promised**
 - 🟢 [**Shipped**](https://github.com/ahmetozrahat/confible-releases/issues?q=is%3Aissue+label%3A%22status%3A+shipped%22) — released, with the version on the issue
 - ⚪️ [**Not planned**](https://github.com/ahmetozrahat/confible-releases/issues?q=is%3Aissue+label%3A%22status%3A+not+planned%22) — considered and declined, **with the reason**
 
 Nothing gets a date. A one-person product that promises a quarter and misses it
 has told you less than one that promises an order and keeps it.
+
+**Planned and considering are different words on purpose.** The internal backlog
+— every gap found by reading this category's tools and this category's forums —
+was published here in full rather than kept in a private file. Most of it is
+`considering`: real, wanted, written down, and **not a commitment**. Calling all
+of it planned would make the word planned worthless, and a roadmap where
+everything is planned is a wish list with better typography.
+
+That distinction is also what makes the list useful to us. Confible ships no
+telemetry, so **a 👍 on an issue is the only demand signal there is.** Reactions
+on `considering` items are how they become `planned`.
 
 An idea that is taken gets `status: planned` — that is the whole mechanism, and
 it means an accepted request appears on the roadmap rather than in a reply that
