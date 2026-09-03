@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/ahmetozrahat/confible-releases/security/policy
+    about: Do not open an issue. Report it privately — see the security policy.
+  - name: Licence, billing or a refund
+    url: https://confible.dev/contact
+    about: Anything tied to your account or your order. It needs an address we can reply to, not a public thread.
+  - name: Question, or an idea you want to talk through
+    url: https://github.com/ahmetozrahat/confible-releases/discussions
+    about: Discussions. Issues are for a bug with steps or a request with an edge to it.

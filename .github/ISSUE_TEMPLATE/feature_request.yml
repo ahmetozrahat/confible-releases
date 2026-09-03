@@ -1,0 +1,48 @@
+name: Idea
+description: Something the app does not do yet.
+labels: ["type: idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas are read, and the ones that are taken get a `status: planned`
+        label — that label query **is** the roadmap, so an accepted idea shows
+        up there rather than in a reply that ages. Ideas that are declined get
+        `status: not planned` and a reason, not silence.
+
+        Not sure yet, or want to argue about the shape of something? Open a
+        [discussion](../../discussions) instead. An issue is for a request with
+        an edge to it.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: >
+        The task, not the feature. "I keep three bastions and have to retype the
+        chain" tells us more than "add jump host support", because the first one
+        can be solved several ways and the second one names only one of them.
+    validations:
+      required: true
+
+  - type: textarea
+    id: today
+    attributes:
+      label: How you work around it today
+      description: Another tool, a shell alias, a script, or nothing.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the app
+      options:
+        - Terminal / SSH
+        - Files (SFTP, FTP)
+        - SQL workspace
+        - Object storage (S3)
+        - Remote desktop (RDP)
+        - Redis
+        - Library, palette, settings
+        - Somewhere else
+    validations:
+      required: true

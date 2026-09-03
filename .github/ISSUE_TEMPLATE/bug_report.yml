@@ -1,0 +1,106 @@
+name: Bug report
+description: Something the app does that it should not.
+labels: ["type: bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before you paste anything:** Confible ships no telemetry, so nothing
+        about your systems reaches us unless you type it here — and this page
+        is public. Replace real hostnames, usernames, bucket names, database
+        names and query text with stand-ins. Never paste a password, a private
+        key, a token or a presigned URL. A redacted report is still a usable
+        report; we will ask if we need more.
+
+  - type: input
+    id: version
+    attributes:
+      label: Confible version
+      description: Settings ▸ About, or the version on the build you downloaded.
+      placeholder: "1.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple silicon)
+        - macOS (Intel)
+        - Windows
+        - Linux (AppImage)
+        - Linux (deb)
+    validations:
+      required: true
+
+  - type: input
+    id: os_version
+    attributes:
+      label: OS version
+      placeholder: "macOS 15.4 · Windows 11 23H2 · Ubuntu 24.04"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where it happens
+      options:
+        - Terminal / SSH
+        - Files (SFTP, FTP)
+        - SQL workspace
+        - Object storage (S3)
+        - Remote desktop (RDP)
+        - Redis
+        - Library, palette, settings
+        - Account and vault sync
+        - Licence, trial, devices
+        - Installing or updating
+        - Somewhere else
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, and what the app did instead of what you expected.
+      placeholder: |
+        1. Opened an SSH connection to a host behind a bastion
+        2. Ran `ls -la` in the terminal
+        3. The tab closed with no message
+
+        I expected the session to stay open, or to tell me why it did not.
+    validations:
+      required: true
+
+  - type: textarea
+    id: server
+    attributes:
+      label: What is on the other end
+      description: >
+        The remote side, in general terms — server software and version,
+        anything unusual about the network path. This is usually the difference
+        between a fix and a guess.
+      placeholder: "PostgreSQL 16 on RDS, reached through an SSH tunnel · OpenSSH 9.6 on Debian 12"
+
+  - type: textarea
+    id: message
+    attributes:
+      label: Exact message, if there was one
+      description: >
+        Copied verbatim, with hostnames and paths replaced. Messages that come
+        from a server or a driver are shown by Confible unchanged, so the
+        wording matters.
+      render: text
+
+  - type: checkboxes
+    id: hygiene
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked the open issues and this is not one of them.
+          required: true
+        - label: There is no password, key, token or presigned URL in this report.
+          required: true
